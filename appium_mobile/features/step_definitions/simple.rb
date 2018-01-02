@@ -36,7 +36,7 @@ When(/^browserdan "([^"]*)" açılır$/) do |arg|
   # Appium.promote_appium_methods Object
   # # Appium.promote_appium_methods RSpec::Core::ExampleGroup
   # # Appium.promote_appium_methods Minitest::Spec
-  #
+
   # require 'selenium-webdriver'
   #
   # @selenium_driver.get("http://www.google.com/")
