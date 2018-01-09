@@ -1,4 +1,5 @@
 When(/^browserdan "([^"]*)" açılır$/) do |arg|
+  # samsung a3 =R28J613N0QZ,  lenovo=HB0SVZ81
   desired_caps = {
       caps:  {
           platformName:  'Android',
@@ -11,15 +12,10 @@ When(/^browserdan "([^"]*)" açılır$/) do |arg|
   @selenium_driver=@appium_driver.start_driver
   Appium.promote_appium_methods Object
   @selenium_driver.get("http://www.google.com")
-  #searchBox  id='lst_ib'
-   element=@selenium_driver.find_element(name: 'q')
+  element=@selenium_driver.find_element(name: 'q')
   element.click
   element.send_keys 'ziraat bankası'
   element.send_keys :enter
-  #search button id="tsbb"
-  # element=@selenium_driver.find.element(name: 'btnG')
-  # element.click
-  sleep 3
   driver.quit
 
 
@@ -68,5 +64,55 @@ When(/^arama motoruna "([^"]*)" yazılıp tıklanır$/) do |arg|
  element=find.element(:id, 'tsbb')
  element.click
  sleep 5
+
+end
+
+When(/^ziraatmobil apk sı açılır$/) do
+  desired_caps = {
+      caps:  {
+          platformName:  'Android',
+          platformVersion: '7.0',
+          deviceName: 'R28J613N0QZ',
+          appPackage: 'com.ziraat.ziraatmobil',
+          app: 'C:\Users\LENOVO\Desktop\Ziraat Mobil_com.ziraat.ziraatmobil 1 1.apk'
+      
+      }
+  }
+ @driver = Appium::Driver.new(desired_caps ,  true)
+  @driver.start_driver
+  Appium.promote_appium_methods Object
+end
+
+When(/^havale işlemi greçekleşirilir$/) do
+
+find_element(id: "login_button_image").click
+find_element(id: "cet_login_txt_username").send_keys '44311003534'
+find_element(id: "et_login_txt_password").send_keys 'Ss0312'
+find_element(id: "b_login").click
+find_element(id: "tv_right_text").click
+find_element(id: "b_login").click
+
+find_element(id: "grid_item_label").click
+sleep 3
+
+
+
+# find_element(id: "login_button_image").click
+# find_element(id: "login_button_image").click
+#
+# find_element(id: "login_button_image").click
+#
+# find_element(id: "login_button_image").click
+#
+# find_element(id: "login_button_image").click
+
+
+
+
+
+
+
+
+
 
 end

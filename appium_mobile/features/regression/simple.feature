@@ -4,3 +4,8 @@
     Senaryo: arama motoru
       Diyelim ki browserdan "google" açılır
 #      Ve arama motoruna "ziraat bankası" yazılıp tıklanır
+
+
+  Senaryo: real device with apk working
+  Diyelim ki ziraatmobil apk sı açılır
+  Ve havale işlemi greçekleşirilir
