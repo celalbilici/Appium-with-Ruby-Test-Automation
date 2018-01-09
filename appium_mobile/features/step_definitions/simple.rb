@@ -87,20 +87,20 @@ When(/^havale işlemi greçekleşirilir$/) do
 
 find_element(id: "login_button_image").click
 find_element(id: "cet_login_txt_username").send_keys '44311003534'
-find_element(id: "et_login_txt_password").send_keys 'Ss0312'
+find_element(id: "et_login_txt_password").send_keys ''
 find_element(id: "b_login").click
 find_element(id: "tv_right_text").click
 find_element(id: "b_login").click
-
-find_element(id: "grid_item_label").click
-sleep 3
-
-
-
-# find_element(id: "login_button_image").click
-# find_element(id: "login_button_image").click
-#
-# find_element(id: "login_button_image").click
+find_elements(id: "grid_item_label")[1].click
+text('Vadesiz Hesabıma').click
+text('Hesap No: 2487 - 46893619 - 5007').click
+text('Hesap No: 2487 - 46893619 - 5006').click
+find_element(id: "tv_payment_amount_hint").send_keys '1'
+find_element(id: "et_transition_description").send_keys 'appium deneme'
+find_element(id: "tv_next").click
+ find_element(id: "bt_accept_send").click
+find_element(id: "bt_back_to_index").click
+sleep 2
 #
 # find_element(id: "login_button_image").click
 #
