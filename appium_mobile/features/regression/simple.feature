@@ -9,3 +9,7 @@
   Senaryo: real device with apk working
   Diyelim ki ziraatmobil apk sı açılır
   Ve havale işlemi greçekleşirilir
+
+  Senaryo:real device hepsiburada
+  Diyelim ki hepsiburada apk sı açılır
+  Ve "iphone x 256 gb" aranıp sepete atılır
