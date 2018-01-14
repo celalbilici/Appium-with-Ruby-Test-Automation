@@ -90,10 +90,17 @@ find_element(id: "login_button_image").click
 find_element(id: "cet_login_txt_username").send_keys ''
 find_element(id: "et_login_txt_password").send_keys ''
 find_element(id: "b_login").click
+sleep 1
 find_element(id: "tv_right_text").click
 find_element(id: "b_login").click
+sleep 5
 2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, offset_x: -0.4, offset_y: 0, duration: 600).perform }
+sleep 3
 2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, offset_x: -0.4, offset_y: 0, duration: 600).perform }
+sleep 3
+2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, offset_x: -0.4, offset_y: 0, duration: 600).perform }
+sleep 3
+
 
 find_elements(id: "grid_item_label")[1].click
 text('Vadesiz Hesabıma').click
