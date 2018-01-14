@@ -75,8 +75,7 @@ When(/^ziraatmobil apk sı açılır$/) do
           platformVersion: '7.0',
           deviceName: 'R28J613N0QZ',
           appPackage: 'com.ziraat.ziraatmobil',
-          app: 'C:\Users\LENOVO\Desktop\Ziraat Mobil_com.ziraat.ziraatmobil 1 1.apk'
-      
+          app: 'C:\Users\LENOVO\Desktop\Ziraat Mobil_com.ziraat.ziraatmobil 1 1.apk',
       }
   }
  @driver = Appium::Driver.new(desired_caps ,  true)
@@ -94,12 +93,18 @@ sleep 1
 find_element(id: "tv_right_text").click
 find_element(id: "b_login").click
 sleep 5
-2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, offset_x: -0.4, offset_y: 0, duration: 600).perform }
+Appium::TouchAction.new.press({x: 558, y: 429}).perform
+Appium::TouchAction.new.move_to({x: 108, y: 429}).perform
+Appium::TouchAction.new.release({x: 108, y: 429}).perform
+
+# Appium::TouchAction.new.swipe(start_x: 558, start_y: 429, offset_x: -450, offset_y: 0, duration: 600).perform
 sleep 3
-2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, offset_x: -0.4, offset_y: 0, duration: 600).perform }
-sleep 3
-2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, offset_x: -0.4, offset_y: 0, duration: 600).perform }
-sleep 3
+# 2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, offset_x: -0.4, offset_y: 0, duration: 600).perform }
+# sleep 3
+# 2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, offset_x: -0.4, offset_y: 0, duration: 600).perform }
+# sleep 3
+# 2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, offset_x: -0.4, offset_y: 0, duration: 600).perform }
+# sleep 3
 
 
 find_elements(id: "grid_item_label")[1].click
@@ -156,6 +161,7 @@ When(/^"([^"]*)" aranıp sepete atılır$/) do |arg|
   sleep 1
   Appium::TouchAction.new.tap(x: 40, y: 50, count: 1).perform
   sleep 2
+
   # 3.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.9, offset_x: 20, offset_y: 0, duration: 600).perform }
   # Appium::TouchAction.new.press(x: 500, y: 425).wait(15000).release
   # Appium::TouchAction.new.swipe({start_x: 500, start_y: 500, offset_x: -425, offset_y: 0, duration: 500})
@@ -212,5 +218,55 @@ When(/^"([^"]*)" aranıp sepete atılır$/) do |arg|
 
   # find_elements(id: "grid_item_label")[1].click
   # text('Vadesiz Hesabıma').click
+
+end
+
+When(/^sahibinden uygulaması açılır$/) do
+
+  # HB0SVZ81   , R28J613N0QZ
+  desired_caps = {
+      caps:  {
+          platformName:  'Android',
+          platformVersion: '7.0',
+          deviceName: 'R28J613N0QZ',
+          appPackage: 'com.pozitron.hepsiburada',
+          app: 'C:\Users\LENOVO\Desktop\Hepsiburada_com.pozitron.hepsiburada.apk'
+
+      }
+  }
+  @driver = Appium::Driver.new(desired_caps ,  true)
+  @driver.start_driver
+  Appium.promote_appium_methods Object
+end
+
+When(/^tesla araç aranır$/) do
+  el1 = driver.find_elements(:id, "com.pozitron.hepsiburada:id/etLoginEmail")
+  el1.send_keys "celalbilici11@gmail.com"
+  el2 = driver.find_elements(:id, "com.pozitron.hepsiburada:id/etLoginEmail")
+  el2.click
+  el3 = driver.find_elements(:id, "com.pozitron.hepsiburada:id/etLoginPassword")
+  el3.click
+  el3.send_keys "ATUlisfinpedHe7"
+  el4 = driver.find_elements(:id, "com.pozitron.hepsiburada:id/btnLoginLogin")
+  el4.click
+  el5 = driver.find_elements(:id, "android:id/button1")
+  el5.click
+  el6 = driver.find_elements(:xpath, "/hierarchy/android.widget.FrameLayout/android.widget.RelativeLayout[1]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[1]")
+  el6.click
+  el7 = driver.find_elements(:xpath, "/hierarchy/android.widget.FrameLayout/android.widget.RelativeLayout[1]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[1]")
+  el7.click
+  Appium::TouchAction.new.press({x: 566, y: 529}).perform
+  Appium::TouchAction.new.move_to({x: -337, y: 16}).perform
+
+
+
+
+  # TouchAction
+  #     .new
+  #     .press({x: 337, y: 587})
+  #     .moveTo({x: -8: y: 543})
+  #     .release
+  #     .perform
+
 
 end
