@@ -87,11 +87,14 @@ end
 When(/^havale işlemi greçekleşirilir$/) do
 
 find_element(id: "login_button_image").click
-find_element(id: "cet_login_txt_username").send_keys '44311003534'
+find_element(id: "cet_login_txt_username").send_keys ''
 find_element(id: "et_login_txt_password").send_keys ''
 find_element(id: "b_login").click
 find_element(id: "tv_right_text").click
 find_element(id: "b_login").click
+2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, offset_x: -0.4, offset_y: 0, duration: 600).perform }
+2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, offset_x: -0.4, offset_y: 0, duration: 600).perform }
+
 find_elements(id: "grid_item_label")[1].click
 text('Vadesiz Hesabıma').click
 text('Hesap No: 2487 - 46893619 - 5007').click
@@ -136,6 +139,7 @@ When(/^hepsiburada apk sı açılır$/) do
 end
 
 When(/^"([^"]*)" aranıp sepete atılır$/) do |arg|
+
   find_element(id: "etLoginEmail").send_keys 'celalbilici11@gmail.com'
   find_element(id: "etLoginPassword").click
   find_element(id: "etLoginPassword").send_keys 'ATUlisfinpedHe7'
@@ -145,12 +149,9 @@ When(/^"([^"]*)" aranıp sepete atılır$/) do |arg|
   sleep 1
   Appium::TouchAction.new.tap(x: 40, y: 50, count: 1).perform
   sleep 2
-  element = find_element(accessibility_id: "Kampanya")
-  Appium::TouchAction.new.swipe(element, ele = nil)
+  # 3.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.9, offset_x: 20, offset_y: 0, duration: 600).perform }
   # Appium::TouchAction.new.press(x: 500, y: 425).wait(15000).release
   # Appium::TouchAction.new.swipe({start_x: 500, start_y: 500, offset_x: -425, offset_y: 0, duration: 500})
-
-
   find_element(id: "tv_home_search").click
   find_element(id: "etACBSearchBox").send_keys arg
   find_element(id: "etACBSearchBox").click
@@ -159,10 +160,29 @@ When(/^"([^"]*)" aranıp sepete atılır$/) do |arg|
   # find_element(id: "etACBSearchBox").send_keys enter
   Appium::TouchAction.new.tap(x: 40 , y: 50, count: 1).perform
   sleep 1
-  Appium::TouchAction.new.tap(x: 40 , y: 50, count: 1).perform
-  sleep 1
- element = find_element(accessibility_id: "Kampanya")
-  element.touch_action(:flick, axis: 'x', distance:200, duration:50 )
+  Appium::TouchAction.new.tap(x: 40 , y: 60, count: 1).perform
+  sleep 3
+  Appium::TouchAction.new.tap(x: 493 , y: 955, count: 1).perform
+  find_element(id: "atcb_product_variant_add_to_cart").click
+  find_element(id: "fab_common_cart").click
+  Appium::TouchAction.new.tap(x: 387 , y: 1211, count: 1).perform
+  find_element(id: "first-name").send_keys 'Celal'
+  find_element(id: "last-name").click
+  find_element(id: "last-name").send_keys 'Bilici'
+  find_element(id: "Telefon").click
+  find_element(id: "Telefon").send_keys '055121*****'
+  2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.9, offset_x: 0, offset_y: 0.6, duration: 600).perform }
+
+
+
+
+
+
+
+
+
+
+
 
   # Appium.promote_appium_methods Object
   # find_elements(id: "tv_product_list_item_name")[0].click
