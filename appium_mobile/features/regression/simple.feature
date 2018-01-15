@@ -10,10 +10,36 @@
   Diyelim ki ziraatmobil apk sı açılır
   Ve havale işlemi greçekleşirilir
 
-  Senaryo:real device hepsiburada
+  Senaryo:real device hepsiburadallllll
   Diyelim ki hepsiburada apk sı açılır
   Ve "iphone x 256 gb" aranıp sepete atılır
 
-  Senaryo:real device sahibinden
-  Diyelim ki sahibinden uygulaması açılır
-  Ve tesla araç aranır
+
+
+
+
+  Senaryo:real device hepsiburada
+    Diyelim ki hepsiburada.com uygulaması açılır
+    Ve uygulamada "iphone x 256 gb" aranıp sepete atılır
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
