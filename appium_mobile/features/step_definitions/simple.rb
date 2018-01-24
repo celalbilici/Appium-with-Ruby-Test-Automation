@@ -241,20 +241,26 @@ When(/^uygulamada "([^"]*)" aranıp sepete atılır$/) do |arg|
   sleep 2
   Appium::TouchAction.new.tap(x: 40, y: 50, count: 1).perform
   sleep 2
-  Appium::TouchAction.new.tap(x: 500, y: 860, count: 1).perform
-  Appium::TouchAction.new.tap(x: 500, y: 860, count: 1).perform
-  sleep 1
-  Appium::TouchAction.new.swipe(start_x: 450, start_y: 780, offset_x: 0, offset_y: -460, duration: 600).perform
-  sleep 1
-  Appium::TouchAction.new.tap(x: 551, y: 992, count: 1).perform
-  sleep 3
+  Appium::TouchAction.new.tap(x: 488, y: 672, count: 1).perform
+  Appium::TouchAction.new.tap(x: 488, y: 672, count: 1).perform
 
-  Appium::TouchAction.new.tap(x: 350, y: 1221, count: 1).perform
-  Appium::TouchAction.new.tap(x: 350, y: 1221, count: 1).perform
+  # find_element(id: "com.pozitron.hepsiburada:id/iv_product_add_to_cart").find_element(xpath: "//android.widget.ImageView[@text='Sepete Ekle']").click
   sleep 1
-  find_element(id: "first-name").send_keys "Bir sonraki video da"
+  Appium::TouchAction.new.tap(x: 630, y: 1186, count: 1).perform
+  Appium::TouchAction.new.tap(x: 630, y: 1186, count: 1).perform
+  sleep 5
+  Appium::TouchAction.new.tap(x: 680, y: 100, count: 1).perform
+  Appium::TouchAction.new.tap(x: 680, y: 100, count: 1).perform
+  sleep 5
+  find_element(id: "com.pozitron.hepsiburada:id/tvUserAccountItemCart").click
+  sleep 5
+  Appium::TouchAction.new.tap(x: 342, y: 1210, count: 1).perform
+  Appium::TouchAction.new.tap(x: 342, y: 1210, count: 1).perform
+ sleep 3
+  find_element(id: "first-name").send_keys "Bir sonraki video da  "
   find_element(id: "first-name").click
-  find_element(id: "last-name").send_keys "Görüşmek Üzere"
+  sleep 3
+  find_element(id: "last-name").send_keys "gorusmek uzere"
   find_element(id: "last-name").click
 
 

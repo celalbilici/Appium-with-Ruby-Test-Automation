@@ -18,7 +18,10 @@
 
 
 
-  Senaryo:real device hepsiburada
+
+
+
+  Senaryo:real device hepsiburadasd
     Diyelim ki hepsiburada.com uygulaması açılır
     Ve uygulamada "iphone x 256 gb" aranıp sepete atılır
 

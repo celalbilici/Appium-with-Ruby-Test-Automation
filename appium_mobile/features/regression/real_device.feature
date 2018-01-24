@@ -1,5 +1,5 @@
 #encoding: UTF-8
 # language: tr
 Özellik: real_device test
-  Senaryo: real device arama motoru
-    Diyelim ki cihazdan "google" açılır
+  Senaryo: ziraatbank swipe
+    Diyelim ki cihazdan ziraat apk sı açılır
