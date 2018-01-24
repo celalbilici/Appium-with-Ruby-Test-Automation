@@ -141,5 +141,43 @@ When(/^task 5 seçilip title yazılmadan sadece description yazılırsa kaydedil
   save.click
   sleep 0.5
   find_element(xpath: "//android.widget.TextView[@text='TO DOs cannot be empty']").click
+  geri= find_element(accessibility_id: "Yukarı git")
+  geri.click
+  geri= find_element(accessibility_id: "Yukarı git")
+  geri.click
 end
 
+
+When(/^task 5 de title ve description set edilmeden kaydedilemediği görülür$/) do
+  find_element(xpath: "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]/android.widget.TextView").click
+  update = find_element(xpath: "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ImageButton")
+  update.click
+  name = find_element(xpath: "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.EditText[1]")
+  name.clear
+  description = find_element(xpath: "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.EditText[2]")
+  description.clear
+  save = find_element(accessibility_id: "Done")
+  save.click
+  sleep 0.5
+  find_element(xpath: "//android.widget.TextView[@text='TO DOs cannot be empty']").click
+  geri= find_element(accessibility_id: "Yukarı git")
+  geri.click
+  geri= find_element(accessibility_id: "Yukarı git")
+  geri.click
+end
+
+When(/^task listesine "([^"]*)" eklenir$/) do |product|
+  basket=find_element(id: "me.henrytao.mvvmlifecycle:id/fab_add")
+  basket.click
+  name = find_element(xpath: "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.EditText[1]")
+  name.send_keys product
+  description = find_element(xpath: "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.EditText[2]")
+  description.send_keys "açiklama"
+  save = find_element(accessibility_id: "Done")
+  save.click
+
+end
+
+When(/^scroll ile aşağı yukarı gidilebildiği görülür$/) do
+  pending
+end
