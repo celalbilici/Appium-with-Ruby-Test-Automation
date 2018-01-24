@@ -179,9 +179,9 @@ When(/^task listesine "([^"]*)" eklenir$/) do |product|
 end
 
 When(/^scroll ile aşağı yukarı gidilebildiği görülür$/) do
-  2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, end_x: 0.5, end_y: 0.8, duration:600).perform }
-  sleep 3
-  2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.8, end_x: 0.5, end_y: 0.2, duration:600).perform }
+  2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, offset_x: 0.0, offset_y: 0.6, duration:600).perform }
+  sleep 1
+  2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.8, offset_x: 0.0, offset_y: - 0.2, duration:600).perform }
 
 end
 
