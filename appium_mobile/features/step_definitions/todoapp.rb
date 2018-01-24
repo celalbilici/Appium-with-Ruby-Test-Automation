@@ -179,5 +179,19 @@ When(/^task listesine "([^"]*)" eklenir$/) do |product|
 end
 
 When(/^scroll ile aşağı yukarı gidilebildiği görülür$/) do
-  pending
-end
+  def find_in_list(product)
+    3.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, end_x: 0.5, end_y: 0.8, duration:600).perform }
+
+    current_screen = get_source
+    previous_screen = ""
+
+    until (exists{ text(product) }) || (current_screen == previous_screen) do
+      Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.8, end_x: 0.5, end_y: 0.2, duration:600).perform
+      previous_screen = current_screen
+      current_screen = get_source
+    end
+  end
+  find_in_list("Kesfet")
+  find_element(xpath: "//android.widget.TextView[@text='Kesfet']").click
+  # find_element(xpath: "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.support.v7.widget.RecyclerView/
+  end

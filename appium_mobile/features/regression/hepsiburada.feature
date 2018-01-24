@@ -5,7 +5,7 @@
 
   Senaryo: Yapilacaklar listesi hazirlayalim
     Diyelim ki uygulama açılmış olsun
-    O zaman ilgili tasklara ait checkboxların seçilebildiği görülür
+#    O zaman ilgili tasklara ait checkboxların seçilebildiği görülür
 #    Ve seçili tasklardan "1".sinin unchecked yapılabildiği görülür
 #    Ve "task 3" silinir
 #    Ve "task 1" adi ve açiklamasi aşağıdaki gibi güncellenir
@@ -25,10 +25,10 @@
 
     Ve task listesine "Spor Outdoor" eklenir
     Ve task listesine "Kozmetik Kisisel Bakim" eklenir
-    Ve task listesine "Supermarket Petshop" eklenir
-    Ve task listesine "Kitap muzik film hobi" eklenir
-    Ve task listesine "Size Ozel Oneriler" eklenir
-    Ve task listesine "Kesfet" eklenir
+#    Ve task listesine "Supermarket Petshop" eklenir
+#    Ve task listesine "Kitap muzik film hobi" eklenir
+#    Ve task listesine "Size Ozel Oneriler" eklenir
+   Ve task listesine "Kesfet" eklenir
 
    Ve scroll ile aşağı yukarı gidilebildiği görülür
 #    Ve scroll ile ekranda "Elektronik" taskı seçtirilir
