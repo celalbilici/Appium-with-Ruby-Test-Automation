@@ -179,19 +179,29 @@ When(/^task listesine "([^"]*)" eklenir$/) do |product|
 end
 
 When(/^scroll ile aşağı yukarı gidilebildiği görülür$/) do
+  2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, end_x: 0.5, end_y: 0.8, duration:600).perform }
+  sleep 3
+  2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.8, end_x: 0.5, end_y: 0.2, duration:600).perform }
+
+end
+
+When(/^scroll ile ekranda "([^"]*)" task ı seçtirilir$/) do |taskname|
   def find_in_list(product)
-    3.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, end_x: 0.5, end_y: 0.8, duration:600).perform }
+    2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, offset_x: 0.0, offset_y: 0.6, duration:600).perform }
 
     current_screen = get_source
     previous_screen = ""
 
     until (exists{ text(product) }) || (current_screen == previous_screen) do
-      Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.8, end_x: 0.5, end_y: 0.2, duration:600).perform
+      Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.8, offset_x: 0.0, offset_y: - 0.6, duration:600).perform
       previous_screen = current_screen
       current_screen = get_source
     end
   end
-  find_in_list("Kesfet")
-  find_element(xpath: "//android.widget.TextView[@text='Kesfet']").click
-  # find_element(xpath: "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.support.v7.widget.RecyclerView/
-  end
+  find_in_list(taskname)
+  find_element(xpath: "//android.widget.TextView[@text='#{taskname}']").click
+  sleep 0.5
+  find_element(accessibility_id: "Yukarı git").click
+  driver.back
+
+end
