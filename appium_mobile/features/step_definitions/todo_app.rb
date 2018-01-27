@@ -24,6 +24,13 @@ end
 When(/^tasklar sirasiyla check edilir$/) do
   task1 = find_element(xpath: "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.CheckBox")
   task1.click
+  task1.click
+  element=driver.find_element(xpath: "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.CheckBox");
+
+  if(element.attribute("checked")=="false")
+
+        element.click()
+    end
   task2 = find_element(xpath: "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.widget.CheckBox")
   task2.click
   task3 = find_element(xpath: "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.widget.CheckBox")
@@ -32,6 +39,7 @@ When(/^tasklar sirasiyla check edilir$/) do
   task4.click
   task5 = find_element(xpath: "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[5]/android.widget.CheckBox")
   task5.click
+
 end
 
 When(/^check edilen tasklardan "([^"]*)"\.sinin unchecked yapılabildiği görülür$/) do |arg|
@@ -213,4 +221,14 @@ end
 When(/^Uygulamadan cikis yapilir$/) do
   find_element(accessibility_id: "Yukarı git").click
   driver.back
+end
+
+
+When(/^deneme dffdfdfd$/) do
+ ###### multi_touch rb içindeki functionlar
+  zoom(percentage = 200, auto_perform = true, driver = $driver)
+  pinch(percentage = 25, auto_perform = true, driver = $driver)
+  text_exact("task 5")
+  # fill_in(title, options={})
+
 end
