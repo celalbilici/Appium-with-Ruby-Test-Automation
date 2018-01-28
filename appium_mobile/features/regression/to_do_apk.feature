@@ -18,11 +18,21 @@
 #       Ve uygulamadaki default gelen tüm tasklardaki chexboxların unchecked oldugu gorulur.
 #       Ve gorev listesinden "task 2" silinir
 #       Ve gorev listesinden "task 4" check edilip tekrar unchecked hale getirilir
-       Ve menuden "task 1" başlığı  ve "description 1" açiklama kısmı aşağıdaki gibi güncellenir
+
+     Ve menuden "task 3" başlığı  ve "description 3" açiklama kısmı aşağıdaki yazılıp kaydedilmeden çıkılırsa başlık kısmının ve açıklamanın değişmediği görülür
+         | task          | Olu Deniz               |
+         | things to do  | Yamac Parasutu yapmak   |
+
+     Ve menuden "task 4" başlığı  ve "description 4" açiklama kısmı aşağıdaki yazılıp başlık kaydedilmeden çıkılırsa başlık kısmının ve açıklamanın değişmediği görülür
+         | things to do    | Olu Deniz               |
+
+     Ve menuden "task 1" başlığı  ve "description 1" açiklama kısmı aşağıdaki gibi güncellenir
          | task          | Japonya Seyahati           |
          | things to do  | Kiraz Agaclarini Gormek    |
-#       Ve listeden "task 2" seçilip title ve description aşağıdaki gibi girilip kaydedilmeden çıkılırsa eklenmek istenen kaydın listede olmadığı görülür
-#         | title       | Cep Telefonu |
-#         | description | Iphone x     |
-#       Ve  task 5 seçilip title yazılmadan sadece description yazılırsa kaydedilemediği görülür
-#         | description | Macbook |
+
+
+
+
+
+
+

@@ -86,3 +86,48 @@ When(/^menuden "([^"]*)" başlığı  ve "([^"]*)" açiklama kısmı aşağıdak
   go_back = find_element(accessibility_id: "Yukarı git")
   go_back.click
 end
+
+When(/^menuden "([^"]*)" başlığı  ve "([^"]*)" açiklama kısmı aşağıdaki yazılıp kaydedilmeden çıkılırsa başlık kısmının ve açıklamanın değişmediği görülür$/) do |taskname, explanation, table|
+  # table is a table.hashes.keys # => [:task, :Olu Deniz]
+    table = Hash[table.raw]
+    gorev = table['task']
+    yapılacaklar = table['things to do']
+    find_element(xpath: "//android.widget.TextView[@text='#{taskname}']").click
+
+    find_element(xpath: "//android.widget.FrameLayout/android.view.ViewGroup/android.widget.ImageButton").click
+    headline=find_element(xpath: "//android.widget.EditText[@text='#{taskname}']")
+    headline.clear
+    headline.send_keys gorev
+    definition=find_element(xpath: "//android.widget.EditText[@text='#{explanation}']")
+    definition.clear
+    definition.send_keys yapılacaklar
+    go_back = find_element(accessibility_id: "Yukarı git")
+    go_back.click
+    text_exact(taskname)
+    text_exact(explanation)
+    go_back.click
+
+end
+
+
+When(/^menuden "([^"]*)" başlığı  ve "([^"]*)" açiklama kısmı aşağıdaki yazılıp başlık kaydedilmeden çıkılırsa başlık kısmının ve açıklamanın değişmediği görülür$/) do |taskname, explanation, table|
+  # table is a table.hashes.keys # => [:things to do, :Olu Deniz]
+  #
+  table = Hash[table.raw]
+  yapılacaklar = table['things to do']
+  find_element(xpath: "//android.widget.TextView[@text='#{taskname}']").click
+  find_element(xpath: "//android.widget.FrameLayout/android.view.ViewGroup/android.widget.ImageButton").click
+  headline=find_element(xpath: "//android.widget.EditText[@text='#{taskname}']")
+  headline.clear
+  definition=find_element(xpath: "//android.widget.EditText[@text='#{explanation}']")
+  definition.clear
+  definition.send_keys yapılacaklar
+  save = find_element(accessibility_id: "Done")
+  save.click
+  sleep 0.5
+  find_element(xpath: "//android.widget.TextView[@text='TO DOs cannot be empty']").click
+  go_back = find_element(accessibility_id: "Yukarı git")
+  go_back.click
+  go_back.click
+  text_exact(taskname)
+end
