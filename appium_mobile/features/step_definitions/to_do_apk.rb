@@ -67,7 +67,7 @@ When(/^gorev listesinden "([^"]*)" check edilip tekrar unchecked hale getirilir$
 end
 
 
-When(/^menuden "([^"]*)" başlığı  ve "([^"]*)" açiklama kısmı aşağıdaki gibi güncellenir$/) do |taskname, explanation, table|
+When(/^menuden "([^"]*)" başlığı seçilir ve "([^"]*)" açiklama kısmı aşağıdaki gibi güncellenir$/) do |taskname, explanation, table|
   # table is a table.hashes.keys # => [:task, :Japonya Seyahati]
   table = Hash[table.raw]
   gorev = table['task']
@@ -148,6 +148,28 @@ When(/^menuden "([^"]*)" e girilip başlığı  ve "([^"]*)" açiklama silip hi�
 
 end
 
+When(/^menuden "([^"]*)" başlığı  ve "([^"]*)" açiklama kısmı aşağıdaki gibi güncellenir$/) do |taskname, explanation, table|
+  # table is a table.hashes.keys # => [:task, :Japonya Seyahati]
+  table = Hash[table.raw]
+  gorev = table['task']
+  yapılacaklar = table['things to do']
+  find_element(xpath: "//android.widget.TextView[@text='#{taskname}']").click
+
+  find_element(xpath: "//android.widget.FrameLayout/android.view.ViewGroup/android.widget.ImageButton").click
+  headline=find_element(xpath: "//android.widget.EditText[@text='#{taskname}']")
+  headline.clear
+  headline.send_keys gorev
+  definition=find_element(xpath: "//android.widget.EditText[@text='#{explanation}']")
+  definition.clear
+  definition.send_keys yapılacaklar
+  save = find_element(accessibility_id: "Done")
+  save.click
+  text_exact(gorev)
+  text_exact(yapılacaklar)
+  go_back = find_element(accessibility_id: "Yukarı git")
+  go_back.click
+end
+
 When(/^gorev listesine  "([^"]*)" görevi eklenir$/) do |things_to_do|
   add=find_element(id: "me.henrytao.mvvmlifecycle:id/fab_add")
   add.click
@@ -189,3 +211,4 @@ When(/^test bittiğinden apk dan çıkış yapılır$/) do
   find_element(accessibility_id: "Yukarı git").click
   driver.back
 end
+
