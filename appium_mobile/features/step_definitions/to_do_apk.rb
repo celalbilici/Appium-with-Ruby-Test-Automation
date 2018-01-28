@@ -202,9 +202,11 @@ When(/^scroll yardımıyla "([^"]*)" gorevi sectirilir$/) do |title|
 
   find_in_list(title)
   find_element(xpath: "//android.widget.TextView[@text='#{title}']").click
-  find_element(id: "checkbox").click
+  # find_element(id: "checkbox").click
   sleep 0.5
-
+  driver.back
+  # find_element(xpath: "//android.widget.TextView[@text='#{title}']").click
+  # find_element(id: "checkbox").click
 end
 
 When(/^test bittiğinden apk dan çıkış yapılır$/) do
@@ -212,3 +214,14 @@ When(/^test bittiğinden apk dan çıkış yapılır$/) do
   driver.back
 end
 
+
+When(/^uygulamanın yan tarafta gizlenmiş bölümde sekmeler varmıdır diye swipe ile açılır ve bakılır$/) do
+  Appium::TouchAction.new.press({x: 17, y: 184}).perform
+  Appium::TouchAction.new.move_to({x: 438, y: 0}).perform
+  Appium::TouchAction.new.release({x: 438, y: 0}).perform
+  sleep 3
+  find_element(id: "design_menu_item_text").click
+  message =find_element(id: "message").text
+  p  message
+  find_element(id: "button1").click
+end

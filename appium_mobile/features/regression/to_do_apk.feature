@@ -14,10 +14,10 @@
          | appPackage     | me.henrytao.mvvmlifecycle |
          | app            | C:\Users\LENOVO\Desktop\MVVM Life Cycle_me.henrytao.mvvmlifecycle.apk |
          | appActivity    | me.henrytao.mvvmlifecycledemo.ui.MainActivity |
-
-#       Ve uygulamadaki default gelen tüm tasklardaki chexboxların unchecked oldugu gorulur.
-#       Ve gorev listesinden "task 2" silinir
-#       Ve gorev listesinden "task 4" check edilip tekrar unchecked hale getirilir
+        Ve uygulamanın yan tarafta gizlenmiş bölümde sekmeler varmıdır diye swipe ile açılır ve bakılır
+       Ve uygulamadaki default gelen tüm tasklardaki chexboxların unchecked oldugu gorulur.
+       Ve gorev listesinden "task 2" silinir
+       Ve gorev listesinden "task 4" check edilip tekrar unchecked hale getirilir
 
        Ve menuden "task 3" başlığı  ve "description 3" açiklama kısmı aşağıdaki yazılıp kaydedilmeden çıkılırsa başlık kısmının ve açıklamanın değişmediği görülür
          | task          | Olu Deniz               |
@@ -48,7 +48,7 @@
        Ve gorev listesine  "Her zaman" görevi eklenir
        Ve sayfayadaki line sayısı arttığından scroll un calışabildiği görülür
        Ve scroll yardımıyla "Olumlu dusunun" gorevi sectirilir
-       Ve scroll yardımıyla "El-classico yu ispanya'da izleyin" gorevi sectirilir
+#       Ve scroll yardımıyla "El-classico yu ispanya'da izleyin" gorevi sectirilir
        Ve test bittiğinden apk dan çıkış yapılır
 
 
