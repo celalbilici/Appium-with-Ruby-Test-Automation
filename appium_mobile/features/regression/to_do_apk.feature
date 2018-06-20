@@ -9,10 +9,10 @@
      Senaryo: Yapilacaklar listesi olusturma
        Diyelim ki uygulama android bir cihaz uzerinden acılmış olsun
          | platformName   | Android      |
-         | platformVersion| 7.0          |
-         | deviceName     | R28J613N0QZ  |
+         | platformVersion| 7.1.1         |
+         | deviceName     | Pixel 2 API 25  |
          | appPackage     | me.henrytao.mvvmlifecycle |
-         | app            | C:\Users\LENOVO\Desktop\MVVM Life Cycle_me.henrytao.mvvmlifecycle.apk |
+         | app            | C:\Users\lenovo\Desktop\MVVM Life Cycle_me.henrytao.mvvmlifecycle.apk |
          | appActivity    | me.henrytao.mvvmlifecycledemo.ui.MainActivity |
         Ve uygulamanın yan tarafta gizlenmiş bölümde sekmeler varmıdır diye swipe ile açılır ve bakılır
        Ve uygulamadaki default gelen tüm tasklardaki chexboxların unchecked oldugu gorulur.

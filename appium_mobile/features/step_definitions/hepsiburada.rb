@@ -109,3 +109,8 @@ When(/^deneme$/) do
 
 
 end
+
+When(/^google açılır$/) do
+  url = "https://www.google.com/"
+  visit url
+end

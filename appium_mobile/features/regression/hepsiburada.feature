@@ -3,7 +3,7 @@
 
 Özellik: Odev senaryosu
 
-  Senaryo: Yapilacaklar listesi hazirlayalim
+  Senaryo: Yapilacaklar listesi hazirlayalimmi
 #    Diyelim ki uygulama açılmış olsun
 #    O zaman ilgili tasklara ait checkboxların seçilebildiği görülür
 #    Ve seçili tasklardan "1".sinin unchecked yapılabildiği görülür
@@ -30,7 +30,8 @@
 #    Ve task listesine "Kesfet" eklenir
 #    Ve scroll ile aşağı yukarı gidilebildiği görülür
 #    Ve scroll ile ekranda "Size Ozel Oneriler" task ı seçtirilir
-    Ve  servis testi yapılır
+#    Ve  servis testi yapılır
+  Ve google açılır
 
 
 
