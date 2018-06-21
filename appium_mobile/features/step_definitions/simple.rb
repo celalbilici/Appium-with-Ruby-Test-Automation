@@ -85,8 +85,8 @@ end
 When(/^havale işlemi greçekleşirilir$/) do
 
   find_element(id: "login_button_image").click
-  find_element(id: "cet_login_txt_username").send_keys '44311003534'
-  find_element(id: "et_login_txt_password").send_keys 'Kb2602'
+  find_element(id: "cet_login_txt_username").send_keys ''
+  find_element(id: "et_login_txt_password").send_keys ''
   find_element(id: "b_login").click
   sleep 1
   find_element(id: "tv_right_text").click
