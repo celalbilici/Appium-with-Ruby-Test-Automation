@@ -4,7 +4,7 @@
 Özellik: Odev senaryosu
 
   Senaryo: Yapilacaklar listesi hazirlayalimmi
-#    Diyelim ki uygulama açılmış olsun
+    Diyelim ki uygulama açılmış olsun
 #    O zaman ilgili tasklara ait checkboxların seçilebildiği görülür
 #    Ve seçili tasklardan "1".sinin unchecked yapılabildiği görülür
 #    Ve "task 3" silinir

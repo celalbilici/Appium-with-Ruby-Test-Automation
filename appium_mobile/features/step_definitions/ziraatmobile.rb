@@ -61,20 +61,23 @@ end
 
 When(/^"([^"]*)" sekmesine tıklanır$/) do |option|
   find_element(xpath: "//android.widget.TextView[@text='#{option}']").click
-  sleep 1
+  sleep 1.5
 end
 
 
 When(/^geri dönmek için "([^"]*)" butonuna tıklanır$/) do |arg|
   find_element(accessibility_id: arg).click
+  #driver.back
 end
 
 When(/^"([^"]*)" hesabı seçilir$/) do |arg|
   find_element(xpath: "//android.widget.TextView[@text='#{arg}']").click
+  sleep 4
 end
 
 When(/^"([^"]*)" ne tıklanır$/) do |arg|
   find_element(:id, "account_activites_button").click
+  sleep 0.5
 end
 
 When(/^"([^"]*)" ile "([^"]*)" tarihleri arası filtrelenir$/) do |start_date, end_date|
@@ -105,4 +108,24 @@ end
 When(/^"([^"]*)" butonuna tıklanır$/) do |arg|
  # find_element(xpath: "//android.widget.TextView[@text='#{arg}']").click
   find_element(:id, "button_continue").click
+end
+
+When(/^aktarılacak tutar alanına "([^"]*)" yazılır$/) do |amount|
+  Appium::TouchAction.new.tap(x: 438, y: 1080, count: 2).perform
+  sleep 1
+  find_element(:xpath, "//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout[3]/android.view.View[2]/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.support.v7.widget.LinearLayoutCompat/android.widget.FrameLayout/android.support.v7.widget.LinearLayoutCompat/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.EditText[1]").send_keys amount
+  sleep 1
+  find_element(:id, "button_continue").click
+  find_element(xpath: "//android.widget.TextView[@text='Vadeli Hesabıma']").send_keys "appium test otomasyon deneme"
+  find_element(:id, "button_continue").click
+  find_element(xpath: "//android.widget.TextView[@text='Tüm Bakiyeyi Aktar']").click
+  #android.support.v7.widget.LinearLayoutCompat/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.EditText[1]").send_keys "2500"
+end
+
+When(/^işlem onaylanır$/) do
+ 2.times {Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.8, offset_x: 0.0, offset_y: -0.6, duration: 600).perform}
+  sleep 1
+ Appium::TouchAction.new.tap(x: 535, y: 1600, count: 2).perform
+
+
 end

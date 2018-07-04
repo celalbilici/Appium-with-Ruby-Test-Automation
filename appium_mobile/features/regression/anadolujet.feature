@@ -7,9 +7,12 @@
   Senaryo: anadolujet test
     Diyelim ki ziraat mobil uygulaması android bir cihaz uzerinden acılmış olsun
       | platformName   | Android        |
-      | platformVersion| 7.0         |
-      | deviceName     | R28J613N0QZ |
+      | platformVersion| 5.0.2        |
+      | deviceName     | SH3AFW905448 |
       | appPackage     | com.anadolujet.mobile|
       | app            | C:\Users\lenovo\Desktop\AnadoluJet_com.anadolujet.mobile.apk |
       | appActivity    | com.anadolujet.mobile.ui.MainActivity |
-    Ve uygulama içerisinde işlemler yapılır
+    Ve menü içerisinden "Bilet Al" seçeneğine tıklanır
+    Ve "tekyön" seçeneği tıklanır
+    Ve bilet için "Nereden" seçeneği tıklanır ve "İstanbul" havalanı seçilir
+    Ve bilet için "Nereye" seçeneği tıklanır ve "Adana" havalanı seçilir

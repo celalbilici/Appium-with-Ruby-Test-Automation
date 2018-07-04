@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77951467-7513-44e3-87af-47c7d653391e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/appium_mobile/features/regression/anadolujet.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appium_mobile/features/step_definitions/anadolu jet.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_mobile/features/regression/anadolujet.feature" beforeDir="false" afterPath="$PROJECT_DIR$/appium_mobile/features/regression/anadolujet.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_mobile/features/regression/hepsiburada.feature" beforeDir="false" afterPath="$PROJECT_DIR$/appium_mobile/features/regression/hepsiburada.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appium_mobile/features/regression/ziraatmobile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/appium_mobile/features/regression/ziraatmobile.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appium_mobile/features/step_definitions/simple.rb" beforeDir="false" afterPath="$PROJECT_DIR$/appium_mobile/features/step_definitions/simple.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_mobile/features/step_definitions/anadolu jet.rb" beforeDir="false" afterPath="$PROJECT_DIR$/appium_mobile/features/step_definitions/anadolu jet.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appium_mobile/features/step_definitions/ziraatmobile.rb" beforeDir="false" afterPath="$PROJECT_DIR$/appium_mobile/features/step_definitions/ziraatmobile.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,18 +31,21 @@
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__arama_motoru.coverage" NAME="Scenario: arama motoru Coverage Results" MODIFIED="1515658153023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__real_device_with_apk_working__2_.coverage" NAME="Scenario: real device with apk working (2) Coverage Results" MODIFIED="1515925417691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__ziraat_test__4_.rcov" NAME="Scenario: ziraat test (4) Coverage Results" MODIFIED="1529588467232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
+    <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__ziraat_hesap_hareketleri_test.rcov" NAME="Scenario: ziraat hesap hareketleri test Coverage Results" MODIFIED="1530623103162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__Yapilacaklar_listesi_olusturma__3_.rcov" NAME="Scenario: Yapilacaklar listesi olusturma (3) Coverage Results" MODIFIED="1528878022925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@hepsiburada_feature.coverage" NAME="hepsiburada.feature Coverage Results" MODIFIED="1516812544016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__real_device_hepsiburadallllll.coverage" NAME="Scenario: real device hepsiburadallllll Coverage Results" MODIFIED="1516040830375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
-    <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__anadolujet_test__1_.rcov" NAME="Scenario: anadolujet test (1) Coverage Results" MODIFIED="1529505452252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
+    <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__anadolujet_test__1_.rcov" NAME="Scenario: anadolujet test (1) Coverage Results" MODIFIED="1529937155860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
+    <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__anadolujet_test__2_.rcov" NAME="Scenario: anadolujet test (2) Coverage Results" MODIFIED="1530278851322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__Yapilacaklar_listesi__2_.coverage" NAME="Scenario: Yapilacaklar listesi (2) Coverage Results" MODIFIED="1516715381836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__Yapilacaklar_listesi_hazirlayalim__2_.coverage" NAME="Scenario: Yapilacaklar listesi hazirlayalim (2) Coverage Results" MODIFIED="1516869895033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
+    <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__ziraat_virman__1_.rcov" NAME="Scenario: ziraat virman (1) Coverage Results" MODIFIED="1530609129881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__Url_in_degistirilmeden_status_kodu_200_gelmesini.rcov" NAME="Scenario: Url in degistirilmeden status kodu 200 gelmesini Coverage Results" MODIFIED="1528878723635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__Yapilacaklar_listesi_olusturma.rcov" NAME="Scenario: Yapilacaklar listesi olusturma Coverage Results" MODIFIED="1529505560430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__real_device_hepsiburada__2_.coverage" NAME="Scenario: real device hepsiburada (2) Coverage Results" MODIFIED="1516040722329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__I_should_be_able_to_open_My_conversions_screen.coverage" NAME="Scenario: I should be able to open My conversions screen Coverage Results" MODIFIED="1516708359277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/features (17)" MODULE_NAME="RubymineProjects" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__real_device_with_apk_working__1_.coverage" NAME="Scenario: real device with apk working (1) Coverage Results" MODIFIED="1515944820048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
-    <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__anadolujet_test.rcov" NAME="Scenario: anadolujet test Coverage Results" MODIFIED="1529482807109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
+    <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__anadolujet_test.rcov" NAME="Scenario: anadolujet test Coverage Results" MODIFIED="1529869479897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__real_device_hepsiburada__4_.coverage" NAME="Scenario: real device hepsiburada (4) Coverage Results" MODIFIED="1515763898701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__ziraat_test__3_.rcov" NAME="Scenario: ziraat test (3) Coverage Results" MODIFIED="1529569638468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__Url_in_degistirilmeden_status_kodu_200_gelmesini__2_.rcov" NAME="Scenario: Url in degistirilmeden status kodu 200 gelmesini (2) Coverage Results" MODIFIED="1528728618996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
@@ -51,12 +54,15 @@
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__real_device_hepsiburada.coverage" NAME="Scenario: real device hepsiburada Coverage Results" MODIFIED="1516041004484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__Yapilacaklar_listesi_olusturma__2_.rcov" NAME="Scenario: Yapilacaklar listesi olusturma (2) Coverage Results" MODIFIED="1528794652013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__real_device_with_apk_working__3_.rcov" NAME="Scenario: real device with apk working (3) Coverage Results" MODIFIED="1529480527360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
+    <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__ziraat_virman__4_.rcov" NAME="Scenario: ziraat virman (4) Coverage Results" MODIFIED="1529671740114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
+    <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__ziraat_hesap_hareketleri_test__1_.rcov" NAME="Scenario: ziraat hesap hareketleri test (1) Coverage Results" MODIFIED="1530626016001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__real_device_sahibinden__3_.coverage" NAME="Scenario: real device sahibinden (3) Coverage Results" MODIFIED="1516021199150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@todo_app_feature.coverage" NAME="todo_app.feature Coverage Results" MODIFIED="1516871092847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__Yapilacaklar_listesi_hazirlayalim__4_.coverage" NAME="Scenario: Yapilacaklar listesi hazirlayalim (4) Coverage Results" MODIFIED="1516810105986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__real_device_hepsiburada__1_.coverage" NAME="Scenario: real device hepsiburada (1) Coverage Results" MODIFIED="1516022040814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__Yapilacaklar_listesi_hazirlayalimmi__2_.rcov" NAME="Scenario: Yapilacaklar listesi hazirlayalimmi (2) Coverage Results" MODIFIED="1528749225364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__Yapilacaklar_listesi__1_.coverage" NAME="Scenario: Yapilacaklar listesi (1) Coverage Results" MODIFIED="1516715167575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
+    <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__anadolujet_test__3_.rcov" NAME="Scenario: anadolujet test (3) Coverage Results" MODIFIED="1530280375637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__arama_motoru__1_.coverage" NAME="Scenario: arama motoru (1) Coverage Results" MODIFIED="1515417322311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__ziraatbank_swipe.coverage" NAME="Scenario: ziraatbank swipe Coverage Results" MODIFIED="1516287217178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__yaplacaklar_listesi__1_.coverage" NAME="Scenario: yapılacaklar listesi (1) Coverage Results" MODIFIED="1516647350901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
@@ -64,9 +70,11 @@
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__real_device_with_apk_working.coverage" NAME="Scenario: real device with apk working Coverage Results" MODIFIED="1516632107911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__Yapilacaklar_listesi_olusturma__1_.rcov" NAME="Scenario: Yapilacaklar listesi olusturma (1) Coverage Results" MODIFIED="1529478244187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__arama_motoru__2_.coverage" NAME="Scenario: arama motoru (2) Coverage Results" MODIFIED="1515421644364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
+    <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__ziraat_virman.rcov" NAME="Scenario: ziraat virman Coverage Results" MODIFIED="1530614968532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@hepsiburada_feature.rcov" NAME="hepsiburada.feature Coverage Results" MODIFIED="1528725274212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__User_able_to_convert_values__1_.coverage" NAME="Scenario: User able to convert values (1) Coverage Results" MODIFIED="1516647267516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/features (17)" MODULE_NAME="RubymineProjects" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__real_device_arama_motoru.coverage" NAME="Scenario: real device arama motoru Coverage Results" MODIFIED="1514891110492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
+    <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__ziraat_virman__3_.rcov" NAME="Scenario: ziraat virman (3) Coverage Results" MODIFIED="1530614935052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__Yapilacaklar_listesi.coverage" NAME="Scenario: Yapilacaklar listesi Coverage Results" MODIFIED="1516714383905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@service_test_feature.coverage" NAME="service_test.feature Coverage Results" MODIFIED="1516880629378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__real_device_sahibinden__1_.coverage" NAME="Scenario: real device sahibinden (1) Coverage Results" MODIFIED="1516008220023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
@@ -76,6 +84,7 @@
     <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@service_test_feature.rcov" NAME="service_test.feature Coverage Results" MODIFIED="1528878543138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__real_device_with_apk_working__3_.coverage" NAME="Scenario: real device with apk working (3) Coverage Results" MODIFIED="1515930111732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__Yapilacaklar_listesi__3_.coverage" NAME="Scenario: Yapilacaklar listesi (3) Coverage Results" MODIFIED="1516737260657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
+    <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__ziraat_virman__2_.rcov" NAME="Scenario: ziraat virman (2) Coverage Results" MODIFIED="1530614871995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__real_device_hepsiburadaüü.coverage" NAME="Scenario: real device hepsiburadaüü Coverage Results" MODIFIED="1516110894032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/RubymineProjects@Scenario__Yapilacaklar_listesi_hazirlayalim__3_.coverage" NAME="Scenario: Yapilacaklar listesi hazirlayalim (3) Coverage Results" MODIFIED="1516807399159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
     <SUITE FILE_PATH="coverage/Appium_with_Ruby_Test_Automation@Scenario__Yapilacaklar_listesi_hazirlayalim.rcov" NAME="Scenario: Yapilacaklar listesi hazirlayalim Coverage Results" MODIFIED="1528721516154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_mobile" MODULE_NAME="appium_mobile" />
@@ -95,47 +104,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ziraatmobile.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appium_mobile/features/step_definitions/ziraatmobile.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="106" column="2" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ziraatmobile.feature" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ziraatmobile.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appium_mobile/features/regression/ziraatmobile.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+            <state relative-caret-position="38">
+              <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo_app.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appium_mobile/features/regression/todo_app.feature">
+      <file leaf-file-name="ziraatmobile.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/appium_mobile/features/step_definitions/ziraatmobile.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+            <state relative-caret-position="-2163">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo_app.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appium_mobile/features/step_definitions/todo_app.rb">
+      <file leaf-file-name="to_do_apk.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appium_mobile/features/regression/to_do_apk.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
+            <state>
+              <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="simple.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appium_mobile/features/regression/simple.feature">
+      <file leaf-file-name="to_do_apk.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appium_mobile/features/step_definitions/to_do_apk.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state>
+              <caret line="196" column="101" selection-start-line="196" selection-start-column="6" selection-end-line="196" selection-end-column="117" />
             </state>
           </provider>
         </entry>
@@ -182,15 +182,15 @@
         <option value="$PROJECT_DIR$/appium_mobile/features/step_definitions/service_test.rb" />
         <option value="$PROJECT_DIR$/appium_mobile/features/step_definitions/hepsiburada.rb" />
         <option value="$PROJECT_DIR$/appium_mobile/Gemfile.lock" />
-        <option value="$PROJECT_DIR$/appium_mobile/features/regression/hepsiburada.feature" />
         <option value="$PROJECT_DIR$/appium_mobile/features/support/env.rb" />
         <option value="$PROJECT_DIR$/appium_mobile/Gemfile" />
         <option value="$PROJECT_DIR$/appium_mobile/features/step_definitions/simple.rb" />
+        <option value="$PROJECT_DIR$/appium_mobile/features/regression/to_do_apk.feature" />
+        <option value="$PROJECT_DIR$/appium_mobile/features/regression/hepsiburada.feature" />
         <option value="$PROJECT_DIR$/appium_mobile/features/regression/anadolujet.feature" />
         <option value="$PROJECT_DIR$/appium_mobile/features/step_definitions/anadolu jet.rb" />
-        <option value="$PROJECT_DIR$/appium_mobile/features/regression/to_do_apk.feature" />
-        <option value="$PROJECT_DIR$/appium_mobile/features/regression/ziraatmobile.feature" />
         <option value="$PROJECT_DIR$/appium_mobile/features/step_definitions/ziraatmobile.rb" />
+        <option value="$PROJECT_DIR$/appium_mobile/features/regression/ziraatmobile.feature" />
       </list>
     </option>
   </component>
@@ -215,7 +215,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,6 +255,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -266,7 +266,7 @@
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="project.settings.patched" value="true" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.chrisrm.idea.config.mtCustomThemeConfig" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -291,8 +291,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber.Scenario: ziraat test (4)">
-    <configuration name="Scenario: ziraat test (1)" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
+  <component name="RunManager" selected="Cucumber.Scenario: ziraat hesap hareketleri test (1)">
+    <configuration name="Scenario: ziraat hesap hareketleri test (1)" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="appium_mobile" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -311,7 +311,7 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/../../appium_mobile/features/regression/ziraatmobile.feature" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^ziraat test$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^ziraat hesap hareketleri test$" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
@@ -323,7 +323,7 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
     </configuration>
-    <configuration name="Scenario: ziraat test (3)" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
+    <configuration name="Scenario: ziraat hesap hareketleri test" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="appium_mobile" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -342,7 +342,7 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/../../appium_mobile/features/regression/ziraatmobile.feature" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^ziraat test$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^ziraat hesap hareketleri test$" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
@@ -354,7 +354,7 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
     </configuration>
-    <configuration name="Scenario: ziraat test (4)" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
+    <configuration name="Scenario: ziraat virman (2)" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="appium_mobile" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -373,7 +373,7 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/../../appium_mobile/features/regression/ziraatmobile.feature" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^ziraat test$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^ziraat virman$" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
@@ -385,7 +385,7 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
     </configuration>
-    <configuration name="Scenario: ziraat test (5)" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
+    <configuration name="Scenario: ziraat virman (3)" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="appium_mobile" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -404,7 +404,7 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/../../appium_mobile/features/regression/ziraatmobile.feature" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^ziraat test$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^ziraat virman$" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
@@ -416,7 +416,7 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
     </configuration>
-    <configuration name="Scenario: ziraat test" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
+    <configuration name="Scenario: ziraat virman" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="appium_mobile" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -435,7 +435,7 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/../../appium_mobile/features/regression/ziraatmobile.feature" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^ziraat test$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^ziraat virman$" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
@@ -448,19 +448,19 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
     </configuration>
     <list>
-      <item itemvalue="Cucumber.Scenario: ziraat test (5)" />
-      <item itemvalue="Cucumber.Scenario: ziraat test" />
-      <item itemvalue="Cucumber.Scenario: ziraat test (3)" />
-      <item itemvalue="Cucumber.Scenario: ziraat test (1)" />
-      <item itemvalue="Cucumber.Scenario: ziraat test (4)" />
+      <item itemvalue="Cucumber.Scenario: ziraat virman (2)" />
+      <item itemvalue="Cucumber.Scenario: ziraat virman (3)" />
+      <item itemvalue="Cucumber.Scenario: ziraat virman" />
+      <item itemvalue="Cucumber.Scenario: ziraat hesap hareketleri test" />
+      <item itemvalue="Cucumber.Scenario: ziraat hesap hareketleri test (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber.Scenario: ziraat test (4)" />
-        <item itemvalue="Cucumber.Scenario: ziraat test (1)" />
-        <item itemvalue="Cucumber.Scenario: ziraat test (3)" />
-        <item itemvalue="Cucumber.Scenario: ziraat test" />
-        <item itemvalue="Cucumber.Scenario: ziraat test (5)" />
+        <item itemvalue="Cucumber.Scenario: ziraat hesap hareketleri test (1)" />
+        <item itemvalue="Cucumber.Scenario: ziraat hesap hareketleri test" />
+        <item itemvalue="Cucumber.Scenario: ziraat virman" />
+        <item itemvalue="Cucumber.Scenario: ziraat virman (3)" />
+        <item itemvalue="Cucumber.Scenario: ziraat virman (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -535,7 +535,15 @@
       <workItem from="1529166703516" duration="12179000" />
       <workItem from="1529495972230" duration="4742000" />
       <workItem from="1529522495985" duration="2178000" />
-      <workItem from="1529564951710" duration="9040000" />
+      <workItem from="1529564951710" duration="11431000" />
+      <workItem from="1529649837584" duration="10995000" />
+      <workItem from="1529852494300" duration="6463000" />
+      <workItem from="1529932976664" duration="594000" />
+      <workItem from="1530260041606" duration="4559000" />
+      <workItem from="1530539573113" duration="56000" />
+      <workItem from="1530539729367" duration="3550000" />
+      <workItem from="1530601384977" duration="6101000" />
+      <workItem from="1530614769814" duration="4595000" />
     </task>
     <task id="LOCAL-00001" summary="yaptigim en anlamli calisma hayirli olsun">
       <created>1514904425435</created>
@@ -656,43 +664,50 @@
       <option name="project" value="LOCAL" />
       <updated>1529480706803</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="mobil test artik hazir kullanabilirim">
+      <created>1529588809789</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1529588809789</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__ziraat_test_(1) - 2018.06.21 at 12h 04m 57s.xml">
-      <configuration name="Scenario: ziraat test (1)" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__ziraat_virman_(1) - 2018.07.03 at 12h 14m 14s.xml">
+      <configuration name="Scenario: ziraat virman (1)" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__ziraat_test_(1) - 2018.06.21 at 12h 09m 36s.xml">
-      <configuration name="Scenario: ziraat test (1)" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__ziraat_virman_(2) - 2018.07.03 at 13h 48m 22s.xml">
+      <configuration name="Scenario: ziraat virman (2)" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__ziraat_test_(1) - 2018.06.21 at 12h 11m 02s.xml">
-      <configuration name="Scenario: ziraat test (1)" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__ziraat_virman_(3) - 2018.07.03 at 13h 48m 58s.xml">
+      <configuration name="Scenario: ziraat virman (3)" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__ziraat_test_(4) - 2018.06.21 at 16h 28m 44s.xml">
-      <configuration name="Scenario: ziraat test (4)" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__ziraat_virman - 2018.07.03 at 13h 51m 26s.xml">
+      <configuration name="Scenario: ziraat virman" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__ziraat_test_(4) - 2018.06.21 at 16h 29m 55s.xml">
-      <configuration name="Scenario: ziraat test (4)" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__ziraat_hesap_hareketleri_test - 2018.07.03 at 15h 56m 59s.xml">
+      <configuration name="Scenario: ziraat hesap hareketleri test" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__ziraat_test_(4) - 2018.06.21 at 16h 31m 39s.xml">
-      <configuration name="Scenario: ziraat test (4)" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__ziraat_hesap_hareketleri_test - 2018.07.03 at 15h 57m 48s.xml">
+      <configuration name="Scenario: ziraat hesap hareketleri test" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__ziraat_test_(4) - 2018.06.21 at 16h 34m 15s.xml">
-      <configuration name="Scenario: ziraat test (4)" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__ziraat_hesap_hareketleri_test - 2018.07.03 at 15h 59m 17s.xml">
+      <configuration name="Scenario: ziraat hesap hareketleri test" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__ziraat_test_(4) - 2018.06.21 at 16h 37m 20s.xml">
-      <configuration name="Scenario: ziraat test (4)" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__ziraat_hesap_hareketleri_test - 2018.07.03 at 16h 04m 18s.xml">
+      <configuration name="Scenario: ziraat hesap hareketleri test" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__ziraat_test_(4) - 2018.06.21 at 16h 40m 31s.xml">
-      <configuration name="Scenario: ziraat test (4)" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__ziraat_hesap_hareketleri_test - 2018.07.03 at 16h 06m 57s.xml">
+      <configuration name="Scenario: ziraat hesap hareketleri test" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__ziraat_test_(4) - 2018.06.21 at 16h 43m 02s.xml">
-      <configuration name="Scenario: ziraat test (4)" configurationId="CucumberRunConfigurationType" />
+    <history-entry file="Scenario__ziraat_hesap_hareketleri_test_(1) - 2018.07.03 at 16h 55m 29s.xml">
+      <configuration name="Scenario: ziraat hesap hareketleri test (1)" configurationId="CucumberRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="354029000" />
+    <option name="totallyTimeSpent" value="393333000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -706,15 +721,15 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48907104" visible="true" weight="0.17927383" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4908425" visible="true" weight="0.20121029" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917318" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.512945" side_tool="true" weight="0.42901716" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4935275" weight="0.3280142" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.487055" visible="true" weight="0.13297872" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.487055" visible="true" weight="0.031914894" />
+      <window_info id="Structure" order="1" sideWeight="0.50915754" side_tool="true" visible="true" weight="0.20121029" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32917318" />
       <window_info id="Favorites" order="2" sideWeight="0.510929" side_tool="true" weight="0.15857606" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39937598" />
@@ -886,34 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium_mobile/features/step_definitions/anadolu jet.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_mobile/features/regression/anadolujet.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_mobile/features/regression/to_do_apk.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_mobile/features/regression/hepsiburada.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="21" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/appium_mobile/features/regression/service_test.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -921,29 +908,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium_mobile/features/step_definitions/to_do_apk.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3657" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_mobile/features/step_definitions/real_device.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-403">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_mobile/features/regression/real_device.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/appium_mobile/features/regression/simple.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="207">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -954,31 +922,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium_mobile/features/step_definitions/todo_app.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_mobile/features/step_definitions/ziraatmobile.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="106" column="2" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/appium_mobile/features/regression/todo_app.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="529">
           <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_mobile/features/step_definitions/todo_app.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-552">
+          <caret line="194" column="14" selection-start-line="194" selection-start-column="2" selection-end-line="194" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_mobile/features/regression/hepsiburada.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_mobile/features/regression/anadolujet.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_mobile/features/step_definitions/anadolu jet.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_mobile/features/step_definitions/real_device.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_mobile/features/regression/real_device.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_mobile/features/regression/to_do_apk.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_mobile/features/step_definitions/to_do_apk.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="196" column="101" selection-start-line="196" selection-start-column="6" selection-end-line="196" selection-end-column="117" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/appium_mobile/features/regression/ziraatmobile.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        <state relative-caret-position="38">
+          <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_mobile/features/step_definitions/ziraatmobile.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2163">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
