@@ -7,8 +7,8 @@
   Senaryo: ziraat hesap hareketleri test
     Diyelim ki ziraat mobil uygulaması android bir cihaz uzerinden acılmış olsun
       | platformName    | Android                                                               |
-      | platformVersion | 5.0.2                                                                  |
-      | deviceName      | SH3AFW905448                                                           |
+      | platformVersion | 7.0                                                                  |
+      | deviceName      | HB0SVZ81                                                           |
       | appPackage      | com.ziraat.ziraatmobile.beta                                          |
       | app             | C:\Users\lenovo\Desktop\Ziraat Mobil_com.ziraat.ziraatmobile.beta.apk |
       | appActivity     | com.veripark.ziraatmobile.screens.splash.activities.SplashActivity    |
@@ -34,8 +34,8 @@
   Senaryo: ziraat virman
     Diyelim ki ziraat mobil uygulaması android bir cihaz uzerinden acılmış olsun
       | platformName    | Android                                                               |
-      | platformVersion | 5.0.2                                                                 |
-      | deviceName      | SH3AFW905448                                                          |
+      | platformVersion | 7.0                                                                 |
+      | deviceName      | HB0SVZ81                                                          |
       | appPackage      | com.ziraat.ziraatmobile.beta                                          |
       | app             | C:\Users\lenovo\Desktop\Ziraat Mobil_com.ziraat.ziraatmobile.beta.apk |
       | appActivity     | com.veripark.ziraatmobile.screens.splash.activities.SplashActivity    |
@@ -52,6 +52,36 @@
     Ve aktarılacak tutar alanına "1500" yazılır
     Ve işlem onaylanır
     #Ve dekont için "cbilici@ziraatteknoloji.com" mail adresi seçilir
+
+  Senaryo: ziraat kredi karti borc odeme
+    Diyelim ki ziraat mobil uygulaması android bir cihaz uzerinden acılmış olsun
+      | platformName    | Android                                                               |
+      | platformVersion | 7.0                                                                   |
+      | deviceName      | HB0SVZ81                                                              |
+      | appPackage      | com.ziraat.ziraatmobile.beta                                          |
+      | app             | C:\Users\lenovo\Desktop\Ziraat Mobil_com.ziraat.ziraatmobile.beta.apk |
+      | appActivity     | com.veripark.ziraatmobile.screens.splash.activities.SplashActivity    |
+    Ve uygulama izni verilir ve "Giriş Yap" butonuna tıklanır
+    Ve uygulamaya aşağıdaki bilgilerle giriş yapılır
+      | customerNo | 53637144 |
+      | password1  | 13579    |
+      | password2  | 1234ab   |
+    Ve menu ikonuna tıklanır
+    Ve "Kartlarım" sekmesine tıklanır
+    Ve "Kredi Kartlarım" sekmesine tıklanır
+    Ve "4446 **** **** 0068" nolu kredi kartı seçilir
+    Ve "BORÇ ÖDEME" işlemi seçilir
+    Ve "TL" türünden hesap seçilip "TL BORÇ ÖDE" seçeneğine tıklanır
+    Ve ilgili hesabı seçilir
+    Ve tutar alanına "1" yazılır
+    Ve işlem onaylanır
+
+
+
+
+
+
+
 
 
 
