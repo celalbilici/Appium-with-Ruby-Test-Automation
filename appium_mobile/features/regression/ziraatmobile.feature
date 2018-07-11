@@ -30,7 +30,7 @@
     Ve geri dönmek için "Yukarı git" butonuna tıklanır
     Ve geri dönmek için "Yukarı git" butonuna tıklanır
     Ve geri dönmek için "Yukarı git" butonuna tıklanır
-
+    Ve uygulama sonlandırılır
   Senaryo: ziraat virman
     Diyelim ki ziraat mobil uygulaması android bir cihaz uzerinden acılmış olsun
       | platformName    | Android                                                               |
@@ -75,6 +75,55 @@
     Ve ilgili hesabı seçilir
     Ve tutar alanına "1" yazılır
     Ve işlem onaylanır
+    Ve "myildizbakan@ziraateknoloji.com" mail adresine dekont gönderimi yapılır
+
+
+  Senaryo: doviz alişveris senaryosu
+    Diyelim ki ziraat mobil uygulaması android bir cihaz uzerinden acılmış olsun
+      | platformName    | Android                                                               |
+      | platformVersion | 7.0                                                                   |
+      | deviceName      | HB0SVZ81                                                              |
+      | appPackage      | com.ziraat.ziraatmobile.beta                                          |
+      | app             | C:\Users\lenovo\Desktop\Ziraat Mobil_com.ziraat.ziraatmobile.beta.apk |
+      | appActivity     | com.veripark.ziraatmobile.screens.splash.activities.SplashActivity    |
+    Ve uygulama izni verilir ve "Giriş Yap" butonuna tıklanır
+    Ve uygulamaya aşağıdaki bilgilerle giriş yapılır
+      | customerNo | 56565656 |
+      | password1  | 13579    |
+      | password2  | 1234ab   |
+   # Ve sekmeler arası "" geçiş yapılır
+    Ve menu ikonuna tıklanır
+    Ve "Hesaplarım" sekmesine tıklanır
+    Ve "Tüm Hesaplarım" sekmesine tıklanır
+    Ve "KORDON - 5004" hesabı seçilir
+    Ve üst taraftaki menü sekmesine tıklanır
+    Ve "Döviz Alış" sekmesine tıklanır
+    Ve "KORDON - 5004" hesabı seçilir
+    Ve "KORDON - 5001" hesabı seçilir
+    Ve "100" "TRY" lik döviz alışı için tutar girişi yapılır
+    Ve  işlem onaylanır
+    Ve "myildizbakan@ziraateknoloji.com" mail adresine dekont gönderimi yapılır
+    Ve uygulama sonlandırılır
+    #Ve sürpriz:)
+  Senaryo: anasayfa düzenleme
+    Diyelim ki ziraat mobil uygulaması android bir cihaz uzerinden acılmış olsun
+      | platformName    | Android                                                               |
+      | platformVersion | 7.0                                                                   |
+      | deviceName      | HB0SVZ81                                                              |
+      | appPackage      | com.ziraat.ziraatmobile.beta                                          |
+      | app             | C:\Users\lenovo\Desktop\Ziraat Mobil_com.ziraat.ziraatmobile.beta.apk |
+      | appActivity     | com.veripark.ziraatmobile.screens.splash.activities.SplashActivity    |
+    Ve uygulama izni verilir ve "Giriş Yap" butonuna tıklanır
+    Ve uygulamaya aşağıdaki bilgilerle giriş yapılır
+      | customerNo | 56565656 |
+      | password1  | 13579    |
+      | password2  | 1234ab   |
+   # Ve sekmeler arası "" geçiş yapılır
+    Ve menu ikonuna tıklanır
+    Ve "Profil ve Ayarlar" sekmesine tıklanır
+    Ve "Ana Sayfa Düzenleme" sekmesine tıklanır
+    Ve "Hızlı İşlemler" ile "Varlıklarım" menülerinin yeri değiştirilir
+
 
 
 

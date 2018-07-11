@@ -9,6 +9,7 @@ require 'selenium-webdriver'
 require 'rest-client'
 require 'capybara'
 require 'capybara/dsl'
+require 'touch_action'
 
 Capybara.run_server = true
 Capybara.default_driver = :selenium

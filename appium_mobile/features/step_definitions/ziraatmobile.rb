@@ -24,6 +24,7 @@ When(/^ziraat mobil uygulaması android bir cihaz uzerinden acılmış olsun$/) 
   @driver = Appium::Driver.new(desired_capabilities, true)
   @driver.start_driver
   Appium.promote_appium_methods Object
+
   sleep 5
 end
 
@@ -114,14 +115,10 @@ end
 
 When(/^aktarılacak tutar alanına "([^"]*)" yazılır$/) do |amount|
   sleep 1
-  Appium::TouchAction.new.tap(x: 453, y: 1083, count: 2).perform
+  Appium::TouchAction.new.tap(x: 475, y: 1068, count: 2).perform
   sleep 1
-  #find_element(:xpath, "//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout[2]/android.view.ViewGroup[2]/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.TextView[1]").click
-  find_element(:xpath, "//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout[3]/android.view.ViewGroup[2]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.support.v7.widget.LinearLayoutCompat/android.widget.FrameLayout/android.support.v7.widget.LinearLayoutCompat/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.EditText[1]").send_keys amount
-
-  sleep 0.5
-  Appium::TouchAction.new.tap(x: 810, y: 1840, count: 2).perform
-
+  find_element(:xpath, "//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout[3]/android.view.ViewGroup[2]/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.support.v7.widget.LinearLayoutCompat/android.widget.FrameLayout/android.support.v7.widget.LinearLayoutCompat/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.EditText[1]").send_keys amount
+  @driver.hide_keyboard
   sleep 0.5
   find_element(:id, "button_continue").click
   find_element(xpath: "//android.widget.TextView[@text='Vadeli Hesabıma']").send_keys "appium test otomasyon deneme"
@@ -134,6 +131,7 @@ When(/^işlem onaylanır$/) do
  2.times {Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.8, offset_x: 0.0, offset_y: -0.6, duration: 600).perform}
   sleep 1
  Appium::TouchAction.new.tap(x: 535, y: 1600, count: 2).perform
+  sleep 1
 
 
 end
@@ -171,10 +169,75 @@ When(/^tutar alanına "([^"]*)" yazılır$/) do |amount|
   sleep 2.5
   #find_element(:xpath, "//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout[2]/android.view.ViewGroup[2]/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.TextView[1]").click
   find_element(:xpath, "//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout[3]/android.view.ViewGroup[2]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.support.v7.widget.LinearLayoutCompat/android.widget.FrameLayout/android.support.v7.widget.LinearLayoutCompat/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.EditText[1]").send_keys amount
-
-  sleep 0.5
-  Appium::TouchAction.new.tap(x: 810, y: 1840, count: 2).perform
-
+  @driver.hide_keyboard
   sleep 0.5
   find_element(:id, "button_continue").click
+end
+
+When(/^"([^"]*)" mail adresine dekont gönderimi yapılır$/) do |mail_adress|
+  sleep 2
+  Appium::TouchAction.new.tap(x: 490, y: 840, count: 2).perform
+  find_element(:id, "edit_email").clear
+  find_element(:id, "edit_email").send_keys mail_adress
+  find_element(:id, "button_done").click
+
+
+
+end
+
+When(/^"([^"]*)" ile "([^"]*)" menülerinin yeri değiştirilir$/) do |tab1, tab2|
+  sleep 3
+  yavuz = find_element(xpath: "//android.widget.TextView[@text='#{tab1}']").click
+  çetin = find_element(xpath: "//android.widget.TextView[@text='#{tab2}']").click
+  Appium::TouchAction.new.swipe(yavuz).move(çetin).perform
+
+
+    # Appium::TouchAction.new.long_press(x:400,y:1295).wait(3000).move_to(x:400,y:737).release.perform
+
+
+
+
+  # Appium::TouchAction.new.long_press(elem1).wait(3000).move_to(elem2).perform().release()
+
+
+end
+
+When(/^sekmeler arası "([^"]*)" geçiş yapılır$/) do |arg|
+  2.times { Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.2, offset_x: -0.4, offset_y: 0, duration: 600).perform }
+  sleep 3
+end
+
+When(/^üst taraftaki menü sekmesine tıklanır$/) do
+  find_element(:id, "image_credit_card_action").click
+  sleep 1.5
+
+end
+
+When(/^"([^"]*)" "([^"]*)" lik döviz alışı için tutar girişi yapılır$/) do |amount, currency_type|
+  if currency_type == "TRY"
+    find_element(xpath: "//android.widget.TextView[@text='TL Tutar']").click
+    sleep 1.5
+    find_element(id: "edit_text_integer").send_keys amount
+  else currency_type == "USD"
+    find_element(xpath: "//android.widget.TextView[@text='Döviz Tutar']").click
+    sleep 1.5
+    find_element(id: "edit_text_integer").send_keys amount
+  end
+  @driver.hide_keyboard
+  #Appium::TouchAction.new.tap(x: 800, y: 1800, count: 2).perform
+  find_element(id:"btn_continue").click
+
+end
+
+
+When(/^uygulama sonlandırılır$/) do
+  @driver.close_app
+  sleep 2
+end
+
+When(/^sürpriz:\)$/) do
+  find_elements(:accessibility_id, "Kamera").click
+  Appium::TouchAction.new.tap(x: 983, y: 97, count: 2).perform
+  find_elements(:accessibility_id, "Deklansör").click
+
 end

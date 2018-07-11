@@ -7,8 +7,8 @@
   Senaryo: anadolujet test
     Diyelim ki ziraat mobil uygulaması android bir cihaz uzerinden acılmış olsun
       | platformName   | Android        |
-      | platformVersion| 5.0.2        |
-      | deviceName     | SH3AFW905448 |
+      | platformVersion| 7.0       |
+      | deviceName     | HB0SVZ81 |
       | appPackage     | com.anadolujet.mobile|
       | app            | C:\Users\lenovo\Desktop\AnadoluJet_com.anadolujet.mobile.apk |
       | appActivity    | com.anadolujet.mobile.ui.MainActivity |
