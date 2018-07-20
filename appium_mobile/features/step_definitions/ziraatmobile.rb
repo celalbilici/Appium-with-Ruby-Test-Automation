@@ -63,7 +63,7 @@ end
 When(/^"([^"]*)" sekmesine tıklanır$/) do |option|
   sleep 0.5
   find_element(xpath: "//android.widget.TextView[@text='#{option}']").click
-  sleep 1.5
+  sleep 3
 end
 
 
@@ -138,7 +138,7 @@ end
 
 When(/^"([^"]*)" nolu kredi kartı seçilir$/) do |card_number|
   find_element(xpath: "//android.widget.TextView[@text='#{card_number}']").click
-  sleep 1
+  sleep 3
 end
 
 When(/^"([^"]*)" işlemi seçilir$/) do |operation_type|
@@ -187,9 +187,12 @@ end
 
 When(/^"([^"]*)" ile "([^"]*)" menülerinin yeri değiştirilir$/) do |tab1, tab2|
   sleep 3
-  yavuz = find_element(xpath: "//android.widget.TextView[@text='#{tab1}']").click
-  çetin = find_element(xpath: "//android.widget.TextView[@text='#{tab2}']").click
-  Appium::TouchAction.new.swipe(yavuz).move(çetin).perform
+  yavuz = find_element(xpath: "//android.widget.TextView[@text='#{tab1}']")
+  çetin = find_element(xpath: "//android.widget.TextView[@text='#{tab2}']")
+ # Appium::TouchAction.new.press(yavuz).wait(1000).move_to(çetin).release.perform
+  Appium::TouchAction.new.long_press(x:550,y:1285).duration.wait(3000).move_to(x:550,y:770).wait(3000).release.perform
+
+
 
 
     # Appium::TouchAction.new.long_press(x:400,y:1295).wait(3000).move_to(x:400,y:737).release.perform
@@ -213,15 +216,19 @@ When(/^üst taraftaki menü sekmesine tıklanır$/) do
 
 end
 
-When(/^"([^"]*)" "([^"]*)" lik döviz alışı için tutar girişi yapılır$/) do |amount, currency_type|
+When(/^"([^"]*)" "([^"]*)" lik  tutar girişi yapılır$/) do |amount, currency_type|
   if currency_type == "TRY"
     find_element(xpath: "//android.widget.TextView[@text='TL Tutar']").click
     sleep 1.5
     find_element(id: "edit_text_integer").send_keys amount
-  else currency_type == "USD"
+  elsif currency_type == "USD"
     find_element(xpath: "//android.widget.TextView[@text='Döviz Tutar']").click
     sleep 1.5
     find_element(id: "edit_text_integer").send_keys amount
+  else currency_type == "EUR"
+  find_element(xpath: "//android.widget.TextView[@text='Döviz Tutar']").click
+  sleep 1.5
+  find_element(id: "edit_text_integer").send_keys amount
   end
   @driver.hide_keyboard
   #Appium::TouchAction.new.tap(x: 800, y: 1800, count: 2).perform
@@ -240,4 +247,67 @@ When(/^sürpriz:\)$/) do
   Appium::TouchAction.new.tap(x: 983, y: 97, count: 2).perform
   find_elements(:accessibility_id, "Deklansör").click
 
+end
+
+When(/^"([^"]*)" ay "([^"]*)" yıl ile "([^"]*)" cvv2 no kredi kart bilgileri girilir$/) do |month, year, cvv2,|
+  find_element(:id, "picker_expire_month").click
+  sleep 0.5
+  find_element(xpath: "//android.widget.TextView[@text=#{month}]").click
+  sleep 1
+  #### yıl bölümünde id çalışmıyor bakılması lazım
+ # find_element(:id, "picker_expire_year").click
+  Appium::TouchAction.new.tap(x: 956, y: 793, count: 2).perform
+  sleep 0.5
+  find_element(xpath: "//android.widget.TextView[@text=#{year}]").click
+  sleep 1.5
+  Appium::TouchAction.new.tap(x: 437, y: 1074, count: 2).perform
+  find_element(:id, "input_edit_text").send_keys cvv2
+  @driver.hide_keyboard
+  find_element(:id, "button_validate").click
+  sleep 3
+
+
+
+
+
+
+
+
+end
+
+When(/^"([^"]*)" tl tutar girişi yapılır$/) do |amount|
+  find_element(:id, "edit_text_integer").send_keys amount
+  sleep 2
+  @driver.hide_keyboard
+  ####id çalışmıyor
+ # find_elements(:id, "input_edit_text").click
+  Appium::TouchAction.new.tap(x: 507, y: 1115, count: 2).perform
+  sleep 0.5
+end
+
+When(/^nakit avansın  "([^"]*)"  taksit olması istenir$/) do |number|
+  if number.to_i == 0 || number.to_i == 1 then
+    Appium::TouchAction.new.tap(x: 515, y: 700, count: 2).perform
+    sleep 0.5
+    2.times {Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.8, offset_x: 0.0, offset_y: -0.6, duration: 600).perform}
+    sleep 0.5
+  elsif number.to_i ==2 || number.to_i == 3 || number.to_i == 4 || number.to_i == 5 || number.to_i ==6 || number.to_i == 7 || number.to_i == 8 || number.to_i== 9 || number.to_i == 10 || number.to_i == 11 || number.to_i == 12 then
+    find_element(:id, "com.ziraat.ziraatmobile.beta:id/switch_credit_card_cash_advance_installment").click
+    sleep 0.5
+    Appium::TouchAction.new.tap(x: 960, y: 800, count: 2).perform
+    sleep 0.5
+    find_element(xpath: "//android.widget.TextView[@text=#{number}]").click
+    sleep 1
+    find_element(id: "button_credit_card_cash_advance_step_installment_preference_continue").click
+    sleep 1
+    2.times {Appium::TouchAction.new.swipe(start_x: 0.5, start_y: 0.8, offset_x: 0.0, offset_y: -0.6, duration: 600).perform}
+    sleep 1.5
+  else
+    p "taksit sayısını en fazla 12 girebilirsiniz"
+  end
+end
+
+When(/^onayla butonu ile işlem onaylanır$/) do
+  find_element(id: "approve_button").click
+  sleep 1
 end
